@@ -7,6 +7,7 @@
 
 #include "Utils/ofTrueTypeFontExt.h"
 #include "Utils/Cameras/ofxWalkingFirstPersonCamera.h"
+#define number 7
 
 class ofApp : public ofBaseApp
 {
@@ -23,5 +24,10 @@ class ofApp : public ofBaseApp
 	
 		ofTrueTypeFontExt		fontSmall;
     
-    ofMesh mesh;
+    ofMesh mesh[number];
+    
+    int h;
+    int w;
+    
+    ofLight light1;
 };
